@@ -38,7 +38,7 @@ class Server {
     const router = express.Router();
     //proceso la solictudes con el metodo GET a la raiz del servidor
     router.get("/", (req, res) => {
-      res.status(200).send();
+      res.status(200).send({ message: "Bienvenido"});
     });
     //creo  la ruta del User
     const userR = new UserRouter();
